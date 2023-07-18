@@ -1,17 +1,11 @@
 body{
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.container{
-    /* display: grid; */
-    /* grid-template-columns: repeat(3,1fr); */
-    /* gap: 10px; */
-}
-
 .row{
     display: flex;
-    height: 400px;
+    height: 25rem;
     gap: 10px;
     margin-bottom: 10px;
 }
@@ -36,5 +30,15 @@ body{
 @media screen and (max-width:576px) {
     .row{
         flex-direction: column;
+        height: auto;
+    }
+    .square-collage{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    .row{
+        flex-direction: column;
+        height: auto;
     }
 }
